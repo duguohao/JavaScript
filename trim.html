@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=" aa2343 a  a  1 sd ";
+        let b="211asd1d1323123sd121";
+        let c=new Array('a1','a2','a3','a4');
+        console.log(a);
+        console.log(a.trim());
+        console.log("indexOf",a.indexOf("s"));
+        console.log(a.indexOf("1"));
+
+        console.log(a.includes(" "));
+        console.log(a.includes("d"));
+        console.log(a.includes("n"));
+
+        
+
+        console.log(a.substring(0,3));
+        console.log(b.slice());
+        console.log(b.slice(1,11));
+        console.log(b.slice(3,12,));
+        console.log(b.slice(1,-2,));
+        console.log(b.slice(2,-2,));
+        console.log(b.slice(-2));
+        console.log(b.slice(-3));
+
+        console.log(a.match(" aa"));
+        console.log(a.match("1"));
+        console.log("d",b.match(/211asd\d/));
+        console.log("d2",b.match(/d/));
+        console.log("D",b.match(/211asd1\D/));
+        console.log("S",b.match(/211asd\S/));
+        console.log("s",b.match(/211asd1\s/));
+        console.log("s2",b.match(/s/));
+
+
+        //join   split
+        Array=a.split("");
+        console.log(Array);
+
+        
+        console.log(c);
+
+        c.forEach(c1=>{
+            console.log(c1);
+        })
+
+      //   / aa/.test(a);
+
+        if(a.indexOf("a")==true){
+            console.log("asd");
+        }else{
+            console.log("asd2");
+        }
+
+    </script>
+</body>
+</html>
